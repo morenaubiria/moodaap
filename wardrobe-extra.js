@@ -12,7 +12,7 @@ const extraWardrobe=[
 {name:'Mary Janes plateadas',category:2,cell:9},
 {name:'Mini cargo denim',category:1,cell:10},
 {name:'Zapatillas chunky rosas',category:2,cell:11}
-].map(item=>({...item,sprite:'assets/wardrobe/mooda-flower-drop-clean.png'}));
+].map(item=>({...item,sprite:'mooda-flower-drop-clean.png'}));
 extraWardrobe.push(...[
 {name:'Corset satén rosa',category:0,cell:0},
 {name:'Bolero blanco de encaje',category:3,cell:1},
@@ -25,7 +25,7 @@ extraWardrobe.push(...[
 {name:'Botinetas plataforma negras',category:2,cell:8},
 {name:'Mini bag plateada',category:4,cell:10},
 {name:'Lentes Y2K con strass',category:4,cell:11}
-].map(item=>({...item,sprite:'assets/wardrobe/mooda-y2k-vol2.png'})));
+].map(item=>({...item,sprite:'mooda-y2k-vol2.png'})));
 // La colección anterior dependía de recortes manuales sobre láminas de looks.
 // Usar únicamente la colección transparente, sin fondos ni piezas vecinas.
 function installExtraWardrobe(){for(let i=0;i<wardrobe.length;i++)wardrobe[i].splice(0,wardrobe[i].length,...extraWardrobe.filter(item=>item.category===i))}
