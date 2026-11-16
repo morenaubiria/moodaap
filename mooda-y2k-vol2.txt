@@ -1,0 +1,4 @@
+Herramienta: image_gen integrada.
+Prompt creación: lámina PNG transparente 4×3 con doce recortes fotográficos Y2K, frontales, sin modelo ni fondo: corset rosa, bolero blanco de encaje, baby tee negra mariposa, buzo menta plush, cargo negro, mini lila con cadena, bermuda denim con lazos, halter leopardo, botas plataforma negras, sandalias rosas, bolso plateado y lentes rosas strass.
+Prompt edición de mooda-y2k-drop-clean.png: preservar doce productos y grilla de la lámina anterior, eliminar manchas, halos y píxeles de fondo con transparencia real.
+Máscaras SVG adicionales de wardrobe-extra.js restringen los contornos y los huecos al usar los PNG en la app.
