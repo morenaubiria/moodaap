@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--paper:#fcf9fb;--ink:#28222b;--pink:#fa026d;--muted:#968692;--line:#eee5eb;--soft:#f5eaf1;--frame-height:100dvh;font-family:'DM Sans','Avenir Next',sans-serif;color:var(--ink);background:#e9e3e9}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}button{cursor:pointer;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--pink);outline-offset:4px}button:disabled{opacity:.25;cursor:default}button{transition:transform .18s,background .2s,border-color .2s,box-shadow .2s}button:active{transform:scale(.97)}.app{width:100%;max-width:430px;min-height:100dvh;margin:auto;background:var(--paper);box-shadow:0 10px 80px #35203912}.topbar{display:none}.wire-screen{min-height:var(--frame-height);padding:46px 24px calc(105px + env(safe-area-inset-bottom));display:flex;flex-direction:column;position:relative}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,430px);z-index:20;display:grid;grid-template-columns:repeat(4,1fr);padding:13px 15px max(15px,env(safe-area-inset-bottom));border-top:1px solid #fff;backdrop-filter:blur(22px);background:#fffcfbeF;box-shadow:0 -8px 30px #33263b06}.nav button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:6px;color:#a89ba6;position:relative;padding:4px}.nav svg{width:23px;height:23px}.nav small{font-size:8px;font-weight:600;letter-spacing:.6px}.nav .active{color:var(--pink)}.nav .active:before{content:'';position:absolute;top:-14px;height:3px;border-radius:0 0 3px 3px;background:var(--pink);width:25px}.primary{background:var(--ink);color:white;border:0;padding:15px 20px;min-height:49px;border-radius:16px;font-size:11px;font-weight:700;letter-spacing:.5px;box-shadow:0 5px 14px #28222b10}.primary:hover{background:#41303e;box-shadow:0 7px 19px #28222b20}.wire-bottom{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:auto;flex-shrink:0}.wire-bottom>span{font-size:22px;font-weight:400}.back{position:absolute;left:24px;top:15px;background:none;border:0;padding:3px 0;font-size:10px;color:var(--muted)}h1,h2,h3,p{margin-top:0}.wire-title{font-family:Manrope,'Avenir Next',sans-serif;font-size:26px;letter-spacing:-1.1px;line-height:1.25;font-weight:800;text-align:center;margin:10px 0 25px}.flow-title{font:800 34px/1.18 Manrope,sans-serif;letter-spacing:-1.7px;margin:0 0 13px}.flow-copy{font-size:12px;line-height:1.7;color:var(--muted);margin-bottom:24px}.steps{display:flex;gap:5px;justify-content:center;margin:-6px 0 28px}.steps span{height:4px;border-radius:6px;width:28px;background:#eee3eb}.steps .done{background:var(--pink)}.muted{font-size:11px;line-height:1.6;color:var(--muted)}.mini-label{font-size:8px;font-weight:700;letter-spacing:1.7px;color:var(--pink)}.wire-home{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:1px}.home-topline{width:100%;display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:2px;color:#9d8796;margin-bottom:48px}.home-topline>span:last-child{font-size:24px;color:var(--pink)}.home-brand{font:800 80px/.95 Manrope,sans-serif;letter-spacing:-7px;color:var(--pink);position:relative}.home-brand>span{font-size:21px;position:absolute;right:-18px;top:-8px;letter-spacing:0}.home-tagline{font-size:9px;letter-spacing:2px;color:#ae7894;margin:17px 0 48px}.home-copy h1{font:800 40px/1.12 Manrope,sans-serif;letter-spacing:-2px;margin:15px 0}.home-copy h1 em{font-style:normal;color:var(--pink)}.home-copy p{font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:30px}.home-start{width:100%;display:flex;justify-content:space-between;align-items:center;background:var(--pink);font-size:13px;letter-spacing:0}.home-start>span{font-size:23px}.home-shortcuts{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:13px 0 25px}.home-shortcuts button{border:1px solid var(--line);background:white;border-radius:16px;display:flex;align-items:center;padding:15px 12px;gap:7px;font-size:11px}.home-shortcuts svg{width:20px;height:20px;color:var(--pink)}.home-shortcuts button>span{flex:1;text-align:left}.home-bottom-note{font-size:7px;letter-spacing:2px;color:#bcabb8;margin-top:auto;padding-top:14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.occasion-cards{flex:1;margin-bottom:25px;grid-template-rows:repeat(3,minmax(115px,1fr))}.tile{border:1px solid var(--line);border-radius:21px;background:white;padding:16px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:13px;position:relative}.occasion-symbol{width:40px;height:40px;display:grid;place-items:center;color:#9c7c92;background:#f8f2f6;border-radius:12px}.occasion-symbol svg{width:25px;height:25px}.tile>span:nth-child(2){font-size:12px;font-weight:600}.occasion-check{position:absolute;right:13px;bottom:15px;font-size:11px;color:#c5b6c0}.occasion-selected{background:#fff0f7;border-color:#f0b1d0;box-shadow:0 4px 14px #fa026d08}.occasion-selected .occasion-symbol{background:#fbd6e8;color:var(--pink)}.occasion-selected .occasion-check{color:var(--pink)}.source-options{display:grid;gap:15px;margin:3px 0 28px}.option-card{border:1px solid var(--line);border-radius:23px;padding:24px;background:white;text-align:left;position:relative;display:flex;align-items:center;gap:22px;min-height:168px}.source-symbol{width:58px;height:58px;flex-shrink:0;border-radius:17px;background:var(--soft);color:#a97b96;display:grid;place-items:center}.source-symbol svg{width:30px;height:30px}.option-card h3{font:700 18px/1.25 Manrope,sans-serif;letter-spacing:-.6px;margin:7px 0}.option-card p{margin:0;font-size:11px}.selection-dot{position:absolute;right:15px;top:12px;font-size:12px;color:#d7cad3}.option-selected{border-color:#ed95c0;background:#fff2f8}.option-selected .selection-dot{color:var(--pink)}.option-selected .source-symbol{background:#ffd9eb;color:var(--pink)}.wire-closet{display:flex;flex-direction:column;gap:9px;flex:1;margin-bottom:18px}.wardrobe-row{display:grid;grid-template-columns:61px 26px 1fr 26px;gap:7px;align-items:center;min-height:83px;border-bottom:1px solid var(--line);padding-bottom:7px;flex:1}.wardrobe-row:last-child{border-bottom:0}.category-label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:0;border-radius:13px;background:#f4edf2;font-size:7px;padding:7px 2px;height:61px;color:#927d8b}.category-icon{width:27px;height:27px}.category-icon .garment{height:100%;width:100%}.wardrobe-garment{text-align:center;min-width:0}.garment{height:100%;width:100%}.garment svg{width:100%;height:100%;display:block;overflow:hidden}.garment img{height:100%;width:100%;object-fit:contain}.wardrobe-garment .garment{height:85px;filter:drop-shadow(0 4px 5px #30232f12)}.wardrobe-garment small{font-size:8px;color:var(--muted);display:block;margin-top:4px}.arrow{background:white;border:1px solid var(--line);border-radius:50%;width:27px;height:27px;padding:0;font-size:20px;color:#b28ca4}.arrow:hover{background:var(--soft);color:var(--pink)}.closet-bottom{display:grid;grid-template-columns:1fr 65px;gap:12px;margin-bottom:12px}.ropero-button,.large-heart{border:1px solid var(--line);border-radius:16px;background:white;min-height:57px;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:12px}.ropero-button>span{font-size:31px;color:var(--pink)}.large-heart{font-size:32px;color:var(--pink)}.collection-wrap{position:relative;flex:1;display:flex;margin:0 0 18px}.collection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(104px,1fr));gap:10px;width:100%}.collection-cell{background:white;border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7px;overflow:hidden;min-width:0;position:relative}.collection-cell>.garment,.collection-cell>img{height:85px;min-height:0;flex:1;object-fit:contain;width:100%}.collection-cell small{font-size:8px;text-align:center;color:var(--muted);line-height:1.3;margin-top:6px}.vacant{background:#f9f5f8;border-style:dashed}.vacant span{color:#ddccd8}.collection-prev,.collection-next{position:absolute;top:50%;width:18px;height:28px;border:0;border-radius:10px;background:#f1e5ed;color:#b782a1;font-size:21px;padding:0;z-index:1}.collection-prev{left:-21px}.collection-next{right:-21px}.collection-actions{display:grid;gap:10px}.collection-actions .wire-bottom{min-height:42px;background:#f0e7ee;color:#74566b;box-shadow:none}.collection-actions .wire-bottom:first-child{background:var(--ink);color:white}.collection-empty{font-size:11px;text-align:center;color:var(--muted)}.mini-look{display:grid;grid-template-columns:1fr 1fr;flex:1;width:100%;gap:1px}.mini-look .garment{height:33px}.mini-look .garment:first-child{grid-column:1/-1;height:24px}.cell-heart{position:absolute;bottom:15px;left:4px;border:0;border-radius:50%;background:#ffffffd9;color:#b99aae;width:24px;height:24px;font-size:19px;padding:0}.cell-heart.is-favorite{color:var(--pink)}.wire-upload{display:flex;flex-direction:column;gap:14px;flex:1}.upload{border:1px dashed #dfbed1;background:#fff2f8;border-radius:22px;height:250px;display:grid;place-items:center;text-align:center;padding:15px;cursor:pointer}.upload b{font-size:52px;font-weight:400;color:var(--pink)}.upload p{font-size:12px;color:#a17f94;line-height:1.6}.upload input{display:none}.photo{height:205px;width:100%;object-fit:contain}.wire-upload select,.wire-upload>input,.search-input{width:100%;min-height:47px;padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:white;color:#866b7e;font-size:12px}.upload-submit{margin-top:auto;min-height:64px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.wire-inspiration-menu{display:grid;gap:16px;position:absolute;left:24px;right:24px;top:35%}.wire-inspiration-menu .wire-bottom{min-height:72px;background:white;color:#654759;border:1px solid var(--line);box-shadow:0 4px 15px #5b365507;font-size:11px}.wire-inspiration-menu .wire-bottom span{color:var(--pink)}.filter-row{display:flex;gap:5px;margin:12px 0 20px}.choice{background:white;border:1px solid var(--line);border-radius:20px;padding:8px 9px;min-height:30px;font-size:8px;flex:1;white-space:nowrap}.selected{background:var(--ink)!important;color:white!important;border-color:var(--ink)!important}.pin-board{columns:2;column-gap:12px}.pin{break-inside:avoid;display:block;width:100%;border:0;padding:0;margin:0 0 16px;background:none;text-align:left}.editorial-photo{width:100%;background:none;overflow:hidden;border-radius:12px}.editorial-photo svg{width:100%;height:100%;display:block;overflow:hidden}.pin .editorial-photo{aspect-ratio:3/4;height:auto}.pin:nth-child(3n+2) .editorial-photo{aspect-ratio:1/1}.pin-caption{font-size:10px;line-height:1.4;display:flex;justify-content:space-between;margin-top:8px;font-weight:500}.pin small{font-size:8px;color:var(--muted)}.designer-list{display:grid;gap:14px;flex:1;margin-bottom:22px}.designer-card{border:1px solid var(--line);background:white;padding:15px;border-radius:19px;text-align:left;position:relative;display:grid;grid-template-columns:88px 1fr;gap:14px;align-items:center}.designer-card .editorial-photo{height:100px;aspect-ratio:1/1}.designer-card h3{font-size:13px;margin:0 0 7px;letter-spacing:-.3px}.designer-card strong{font-size:10px;font-weight:500}.designer-card p{font-size:9px;margin:7px 0 0}.designer-card.option-selected{background:#fff2f8;border-color:#ed95c0}.music-tabs{width:75%;align-self:center;margin:0 0 20px}.view-musica>h3{font-size:12px;margin:0 0 13px;font-weight:600}.artist-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 27px}.artist{background:none;border:0;padding:0;min-width:0}.artist>span{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fae0ed,#bd94b3);font:600 23px Manrope;color:white;border:3px solid transparent}.artist:nth-child(2)>span{background:linear-gradient(145deg,#e9dff0,#9f8ab3)}.artist:nth-child(3)>span{background:linear-gradient(145deg,#eddbd8,#c59990)}.artist:nth-child(4)>span{background:linear-gradient(145deg,#dce8df,#9ab1a4)}.artist-selected>span{border-color:var(--pink)}.artist small{display:block;font-size:8px;margin-top:7px;color:var(--muted)}.genre-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 27px}.genre{background:#f2e9f0;border:0;border-radius:14px;min-height:100px;padding:12px 2px;color:#98758e}.genre>span{display:block;font-size:30px;margin-bottom:12px}.genre small{font-size:8px}.playlist-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:28px}.playlist{border-radius:15px;overflow:hidden;text-decoration:none;background:#efe5ee;color:#7d5370}.playlist .editorial-photo{height:95px;border-radius:0}.playlist>span{padding:9px 6px;display:block;font-size:8px}.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);width:calc(100% - 48px);max-width:360px;background:#322630ee;color:white;border-radius:16px;padding:16px 20px;font-size:12px;z-index:50;backdrop-filter:blur(15px);text-align:center;box-shadow:0 7px 25px #29182820}
+@media(min-width:500px){body{padding-top:20px}.app{--frame-height:calc(100dvh - 20px);border-radius:30px 30px 0 0;overflow:hidden}}@media(max-height:740px){.wire-screen{padding-top:35px}.flow-title{font-size:29px}.flow-copy{margin-bottom:15px}.occasion-cards{grid-template-rows:repeat(3,minmax(98px,1fr))}.home-topline{margin-bottom:28px}.home-tagline{margin-bottom:25px}.home-copy h1{font-size:35px}.wardrobe-garment .garment{height:65px}.wardrobe-row{min-height:73px}.upload{height:190px}.option-card{min-height:145px;padding:18px}.collection-grid{grid-template-rows:repeat(4,minmax(89px,1fr))}.genre{min-height:85px}.artist-row,.genre-row{margin-bottom:20px}.playlist .editorial-photo{height:75px}}@media(max-width:360px){.wire-screen{padding-left:19px;padding-right:19px}.option-card{gap:14px}.source-symbol{width:45px;height:45px}.flow-title{font-size:29px}.choice{font-size:7px;padding:8px 6px}.home-brand{font-size:70px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.swipe-hint{text-align:center;color:var(--muted);font-size:9px;margin:-13px 0 18px}.wardrobe-garment{touch-action:pan-y;cursor:grab}.wardrobe-garment:active{cursor:grabbing}
+.full{width:100%}.board-switch{display:flex;gap:18px;margin:0 0 19px;border-bottom:1px solid var(--line)}.board-switch button{padding:9px 0;border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);font-size:11px}.board-switch .current{color:var(--pink);border-bottom-color:var(--pink)}.pin-card{position:relative;break-inside:avoid}.pin-save{position:absolute;right:8px;top:8px;border:0;border-radius:50%;width:31px;height:31px;background:#ffffffed;color:#a47790;font-size:20px;box-shadow:0 2px 8px #0001}.pin-save.saved{background:var(--pink);color:white}.pin-detail .editorial-photo{aspect-ratio:3/4;max-height:490px}.profile-title{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:22px 0 8px}.profile-title h2{font:800 25px/1.15 Manrope,sans-serif;letter-spacing:-1px;margin:7px 0 10px}.profile-title .primary{font-size:10px;padding:12px}.detail-section{font:700 14px Manrope,sans-serif;margin:27px 0 15px;letter-spacing:-.4px}.related-pins{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.related-pins button{padding:0;background:none;border:0}.related-pins .editorial-photo{aspect-ratio:3/4}.profile-photo{width:100%;height:100%;object-fit:cover;display:block;border-radius:12px;background:#eee8ed}.profile-hero{height:300px;margin:5px 0 25px;overflow:hidden;border-radius:24px}.profile-hero .profile-photo{object-position:50% 25%;border-radius:0}.profile-name{font:800 32px/1.15 Manrope,sans-serif;letter-spacing:-1.3px;margin:9px 0 8px}.profile-tag{font-size:12px;color:var(--pink);margin-bottom:18px}.profile-bio{font-size:13px;line-height:1.9;color:#85717f;margin:16px 0 20px}.tag-list{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}.tag-list span{font-size:9px;background:#f3e7ef;color:#a16a89;padding:8px 11px;border-radius:20px}.profile-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:20px}.profile-gallery a{min-width:0;display:block;text-decoration:none;color:var(--muted)}.profile-gallery .profile-photo{height:220px;object-fit:contain;background:#f1ebef;padding:5px}.profile-gallery small{font-size:8px;display:block;margin-top:7px}.source-link{color:var(--pink);font-size:10px;display:block;margin:0 0 22px}.image-credits{font-size:9px;color:var(--muted);margin-top:26px;line-height:1.8}.image-credits a{display:block;color:#9f6b8a;margin-top:5px}.designer-card>.profile-photo{width:88px;height:110px;object-position:top}.designer-list{flex:initial}.expanded-artists{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 15px}.expanded-artists .profile-photo{width:100%;aspect-ratio:1;height:auto;border-radius:50%;object-position:top}.expanded-artists .artist small{font-size:10px;color:#7c6173}.artist-hero{height:350px}.listen-link{display:block;text-align:center;text-decoration:none;margin:20px 0 12px;background:#f1e6ed;color:#8f5378;box-shadow:none}.mood-cards{display:grid;gap:13px}.mood-cards button{background:var(--mood-color);border:0;border-radius:20px;min-height:145px;text-align:left;padding:21px;position:relative;color:#302535;overflow:hidden}.mood-number{font-size:8px;letter-spacing:1.7px;display:block;margin-bottom:20px}.mood-cards strong{display:block;font:800 22px/1.1 Manrope,sans-serif;letter-spacing:-.8px;max-width:230px}.mood-cards small{display:block;font-size:10px;margin-top:8px}.mood-cards b{position:absolute;right:20px;bottom:20px;font-size:28px}.mood-cover{background:var(--mood-color);border-radius:25px;min-height:300px;padding:25px;position:relative;overflow:hidden;margin:7px 0 10px;color:#302535}.mood-cover>span{font-size:8px;letter-spacing:1.5px}.mood-cover h2{font:800 44px/1.02 Manrope,sans-serif;letter-spacing:-2px;max-width:260px;position:relative;z-index:1;margin:44px 0 20px}.mood-cover b{position:absolute;font-size:170px;right:-25px;bottom:-40px;opacity:.15;transform:rotate(15deg)}.mood-cover small{font-size:11px}.track-list{display:grid;gap:0;margin-bottom:19px}.track-list a{display:flex;gap:17px;align-items:center;padding:18px 3px;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}.track-index{color:#b8a4b2;font-size:11px;width:18px}.track-list strong{font-size:13px;display:block}.track-list small{font-size:10px;color:var(--muted);display:block;margin-top:5px}.track-play{margin-left:auto;color:var(--pink);font-size:12px}.media-loading{background:#f0e7ee;display:grid;place-items:center;min-height:85px;border-radius:14px;color:#c5a4b9}.media-loading svg{width:28px;height:28px}
+.gallery-photo-button{border:0;background:none;padding:0;min-width:0;cursor:zoom-in}.gallery-photo-button small{font-size:9px;color:var(--muted);display:block;text-align:left;margin-top:8px}.full-look-photo{margin-bottom:22px}.full-look-photo .profile-photo{height:auto;max-height:70dvh;object-fit:contain;background:none}.artist-gallery .profile-photo{height:270px}
+/* Consistent garment stages: equal slots, stable image and caption bounds. */
+.wire-closet{display:grid;grid-template-rows:repeat(5,minmax(112px,1fr));gap:0;flex:1}
+.wardrobe-row{display:grid;grid-template-columns:58px 28px minmax(0,1fr) 28px;gap:8px;min-height:112px;flex:initial;padding:8px 0;align-items:center}
+.wardrobe-garment{display:grid;grid-template-rows:90px 22px;align-items:center;justify-items:center;min-width:0;width:100%}
+.wardrobe-garment .garment{width:132px;max-width:100%;height:90px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.wardrobe-garment .garment svg,.wardrobe-garment .garment img{width:100%;height:100%;object-fit:contain}
+.wardrobe-garment small{margin:3px 0 0;height:20px;max-width:100%;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.25;font-size:8px;overflow:hidden}
+.category-label{height:58px}.category-icon .garment{height:27px;width:27px}
+.wardrobe-row[data-category="4"] .wardrobe-garment .garment{width:110px}
+.wardrobe-row[data-category="3"] .wardrobe-garment .garment{width:140px}
+@media(max-height:740px){.wire-closet{grid-template-rows:repeat(5,minmax(98px,1fr))}.wardrobe-row{min-height:98px;padding:6px 0}.wardrobe-garment{grid-template-rows:76px 20px}.wardrobe-garment .garment{height:76px;width:118px}.wardrobe-row[data-category="3"] .wardrobe-garment .garment{width:126px}.wardrobe-row[data-category="4"] .wardrobe-garment .garment{width:98px}}
+.hero-look-button{display:block;position:relative;width:100%;padding:0;border:0;background:#f2edf1;cursor:zoom-in;margin-bottom:10px}.hero-look-button .profile-photo{object-fit:contain;object-position:center}.hero-look-button>span{position:absolute;bottom:12px;right:12px;padding:8px 12px;border-radius:20px;background:#fffcf2eb;color:#785468;font-size:9px;backdrop-filter:blur(12px)}.look-date{font-size:9px;letter-spacing:.3px;color:#a07b91;margin:0 0 18px}.look-caption{font-size:11px;color:var(--muted);line-height:1.6}.artist-gallery .profile-photo{object-fit:contain}
+/* Give tops a taller fitting stage while preserving the other garment slots. */
+.wire-closet{grid-template-rows:minmax(112px,1fr) minmax(168px,1.5fr) repeat(3,minmax(112px,1fr))}
+.wardrobe-row[data-category="0"]{min-height:168px;padding-top:12px;padding-bottom:12px}
+.wardrobe-row[data-category="0"] .wardrobe-garment{grid-template-rows:140px 22px}
+.wardrobe-row[data-category="0"] .wardrobe-garment .garment{height:140px;width:168px;max-width:100%}
+@media(max-height:740px){.wire-closet{grid-template-rows:minmax(98px,1fr) minmax(146px,1.5fr) repeat(3,minmax(98px,1fr))}.wardrobe-row[data-category="0"]{min-height:146px;padding-top:8px;padding-bottom:8px}.wardrobe-row[data-category="0"] .wardrobe-garment{grid-template-rows:120px 20px}.wardrobe-row[data-category="0"] .wardrobe-garment .garment{height:120px;width:156px}}
+/* MOODA: dinámica, flexible y combinable — reference presentation, pp. 8–13. */
+:root{--paper:#e5f4ef;--pink:#fa026d;--line:#e5b7d0;--soft:#f5dce9}
+body{background:#d1e9e5 url('assets/brand/animal-mint-pink.jpg') center/420px 580px}.app{background:#dbf3eb}.wire-screen{isolation:isolate;background:#def4ed url('assets/brand/animal-mint-pink.jpg') center/100% 560px}.wire-screen:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(135deg,#ffffff18,#6dcfc417);border-radius:inherit}.nav{background:#e0f4e9ed;border-color:#fa026d55;box-shadow:0 -4px 25px #4d7a7212}.nav .active{color:#fa026d}.nav button{color:#829b94}.screen-inicio{background:#bce9de url('assets/brand/animal-mint-pink.jpg') center/cover}.screen-inicio:before{inset:auto -28px 58px -28px;height:145px;background:url('assets/brand/leopard-pink.jpg') center/170px;transform:rotate(-6deg);border-radius:48% 35% 0 0;opacity:.85}.home-topline{color:#578c83}.home-brand{color:#fa026d}.home-copy{padding:10px 15px 0}.home-copy h1{color:#31504c}.home-copy p{color:#547f77}.home-tagline{color:#b75a8b}.home-shortcuts button{background:#fff1f7e8;border-color:#f4b5d1;box-shadow:0 4px 14px #75817c0d}.home-shortcuts{position:relative;z-index:1}.home-bottom-note{color:#71566a;position:relative;z-index:1}.home-start{background:#fa026d;box-shadow:0 6px 0 #dbaac247}
+.screen-crear{background:#f4dce9}.screen-crear:before{background:linear-gradient(180deg,#fff3f7cf 0%,#f4dce9d9 48%,#eec2dba6 100%),url('assets/brand/tiger-soft-pink.jpg') center/260px;opacity:.85}.flow-title{color:#754761}.flow-copy{color:#9d6684}.occasion-cards .tile{background:#fbe4f0;border-color:#e3aac6;box-shadow:0 4px 13px #9e5f7e0b}.occasion-cards .tile:nth-child(3n+2){background:#d5eee7;border-color:#a9d4c8}.occasion-cards .tile:nth-child(3n){background:#e5d6f1;border-color:#cab7df}.occasion-cards .tile:nth-child(4){background:#f7edbb}.occasion-symbol{background:#fff7f4a8;color:#9b5b81}.occasion-selected{outline:2px solid #fa026d;outline-offset:2px}.occasion-selected .occasion-symbol{background:#f5b5d4}.view-opciones .option-card:first-child{background:linear-gradient(110deg,#e3f6edee,#cbeee7ed),url('assets/brand/animal-mint-pink.jpg');border-color:#a5d1c2}.view-opciones .option-card:nth-child(2){background:linear-gradient(120deg,#fff0f9ed,#f8dbe9ed),url('assets/brand/leopard-pink.jpg') right/170px}.source-options .option-selected{border-color:#fa026d;box-shadow:0 6px 22px #ae638122}.view-look{background:#dfecf2}.view-look:before{background:linear-gradient(90deg,#dbcbe144,transparent 20%,transparent 80%,#efbdd844),url('assets/brand/animal-mint-pink.jpg') center/cover}.wire-closet{border-radius:25px;background:#f8f3f4dd;border:1px solid #e6c8d7;padding:6px 10px 0;box-shadow:0 8px 30px #7469820d}.wardrobe-row{border-color:#dabacf66}.category-label{background:#e6d7ed;color:#94667f;border:1px solid #ccb3d5}.wardrobe-row:nth-child(even) .category-label{background:#cdece1;border-color:#a9d0c0}.wardrobe-row:nth-child(3) .category-label{background:#f6d8e7;border-color:#dfb2cb}.arrow{background:#f8e3ee;border-color:#e4b6cd}.closet-bottom .ropero-button{background:#d1ebdf;border-color:#a3c8ba}.large-heart{background:#f6d5e6;border-color:#e3a5c7}.swipe-hint{color:#99768e}
+.screen-armario{background:#c5e8e1 url('assets/brand/animal-mint-pink.jpg') center/cover}.screen-armario:before{background:url('assets/brand/leopard-pink.jpg') center/200px;opacity:.12}.collection-cell{background:#f7f1f2ee;border-color:#c6c6c7;box-shadow:0 3px 8px #48716b0a}.collection-cell:nth-child(4n+2){background:#f6e5f0ed}.collection-cell:nth-child(4n+3){background:#e5dff3ed}.collection-cell.vacant{background:#ecf6ec90;border-color:#abcbb9}.collection-actions .wire-bottom:first-child{background:#5b7f76}.collection-actions .wire-bottom:nth-child(2){background:#edc4d9;color:#8b3f6b}.view-agregar .upload{background:#f5e2ee url('assets/brand/tiger-soft-pink.jpg') center/300px;background-blend-mode:soft-light;border-color:#c389ae}.wire-upload select,.wire-upload>input{background:#eef9efed;border-color:#9ac7b6}.upload-submit{background:#efd1e2;border-color:#dda0c0}
+.screen-inspiracion{background:#e8dcef}.screen-inspiracion:before{background:linear-gradient(180deg,#ede4f2c7,#e9d6ef8f),url('assets/brand/leopard-pink.jpg') center/210px;opacity:.9}.wire-title{color:#8a3f6f}.wire-inspiration-menu .wire-bottom{min-height:78px;border-color:#d9afce;background:#f8dfec;position:relative;overflow:hidden}.wire-inspiration-menu .wire-bottom:before{content:'';position:absolute;right:0;top:0;bottom:0;width:60px;background:url('assets/brand/leopard-pink.jpg') center/140px;opacity:.6;pointer-events:none}.wire-inspiration-menu .wire-bottom:nth-child(2){background:linear-gradient(120deg,#e3f4ef,#c3e6dd);transform:rotate(-1deg)}.wire-inspiration-menu .wire-bottom:nth-child(2):before{background:url('assets/brand/animal-mint-pink.jpg') center/cover}.wire-inspiration-menu .wire-bottom:nth-child(3){background:#f5c7df;transform:rotate(1deg)}.wire-inspiration-menu .wire-bottom:nth-child(3):before{background:url('assets/brand/tiger-soft-pink.jpg') center/130px}.wire-inspiration-menu .wire-bottom span{z-index:1}.view-fotos{background:#efdee9}.view-fotos:before{opacity:.22;background:url('assets/brand/leopard-pink.jpg') center/230px}.search-input{background:#fff6fbe8;border-color:#dab5cb}.choice{background:#f9e6f1;border-color:#d5aec6}.board-switch{border-color:#dcb2cb}.designer-card{background:#f5eff7e8;border-color:#cfb4d6}.tag-list span{background:#e5bad4;color:#8d356c}.profile-bio,.muted{color:#876c7e}.view-musica:before{background:linear-gradient(#eed5f0ba,#e0d9f0b8),url('assets/brand/tiger-soft-pink.jpg') center/250px}.genre{background:#d4c0e5;color:#8a5383}.mood-cards button{border:1px solid #a177ab44}.mood-cards button:after{content:'';position:absolute;inset:0;background:url('assets/brand/leopard-pink.jpg') center/160px;mix-blend-mode:soft-light;opacity:.25;pointer-events:none}.image-credits{padding:12px;background:#f6eff6a8;border-radius:12px}.profile-gallery .profile-photo{background:#e8dfea}
+@media(max-width:360px){.wire-closet{padding-left:6px;padding-right:6px}.wardrobe-row{gap:5px;grid-template-columns:52px 25px minmax(0,1fr) 25px}}
+
+/* Texturas originales proporcionadas por Morena. */
+body{background-size:440px auto;background-repeat:repeat}
+.wire-screen{background-size:cover;background-repeat:no-repeat}
+.screen-inicio{background-image:linear-gradient(#dcf8ef80,#d9f5ec60),url('assets/brand/animal-mint-pink.jpg');background-size:cover}
+.screen-inicio:before{background-size:cover;background-position:center 45%;opacity:.9}
+.screen-crear:before{background:linear-gradient(180deg,#fff2f775,#f8deeb50),url('assets/brand/tiger-soft-pink.jpg') center/cover no-repeat;opacity:1}
+.view-opciones .option-card:first-child{background:linear-gradient(110deg,#e3f6edce,#cbeee7b0),url('assets/brand/animal-mint-pink.jpg') center/cover no-repeat}
+.view-opciones .option-card:nth-child(2){background:linear-gradient(120deg,#fff0f9ce,#f8dbe9c0),url('assets/brand/leopard-pink.jpg') center/cover no-repeat}
+.view-look:before{background:linear-gradient(90deg,#d6eee580,#e5f3ed70),url('assets/brand/animal-mint-pink.jpg') center/cover no-repeat}
+.screen-armario{background-image:linear-gradient(#d9f3e980,#d8f2e780),url('assets/brand/animal-mint-pink.jpg');background-size:cover}
+.screen-armario:before{background-size:cover;opacity:.08}
+.view-agregar .upload{background-size:cover;background-blend-mode:soft-light}
+.screen-inspiracion:before{background:linear-gradient(180deg,#f3e3f3a8,#eed4eaa0),url('assets/brand/leopard-pink.jpg') center/cover no-repeat;opacity:1}
+.wire-inspiration-menu .wire-bottom:before,.wire-inspiration-menu .wire-bottom:nth-child(2):before,.wire-inspiration-menu .wire-bottom:nth-child(3):before{width:74px;background-size:cover;background-repeat:no-repeat;opacity:.85}
+.view-fotos:before{background-size:cover;opacity:.23}
+.view-musica:before{background:linear-gradient(#eed5f09c,#e0d9f0aa),url('assets/brand/tiger-soft-pink.jpg') center/cover no-repeat}
+.mood-cards button:after{background-size:cover;opacity:.22}
+/* Fondo exterior: papel suave, independiente de las pantallas de la app. */
+body{background-color:#eee8ed;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.055'/%3E%3C/svg%3E");background-size:180px 180px;background-repeat:repeat}
+
+/* Logotipo original de MOODA, sin deformación. */
+.home-brand{width:100%;max-width:350px;line-height:0;letter-spacing:normal}.mooda-logo{display:block;width:100%;height:auto;object-fit:contain}.home-brand .mooda-logo{mix-blend-mode:multiply}.brand .mooda-logo{width:120px}
+
+/* MOODA PLAY — collage de cama + escritorio retro. */
+.play-entry{display:block;width:100%;padding:13px 12px;margin:12px 0;border:1px dashed #aa5283;border-radius:12px;background:#fff2a9;color:#713d60;font:700 11px/1.4 sans-serif;cursor:pointer;position:relative;z-index:1}.studio-intro h2{font-size:29px;line-height:1.12;letter-spacing:-1px;margin:12px 0 20px;color:#67405e}.studio-intro em{color:#fa026d}.retro-window{border:2px solid #78647e;background:#e8e4e8;padding:4px;box-shadow:4px 4px 0 #a98aa8;margin:0 3px 16px 0}.retro-title{display:flex;justify-content:space-between;gap:8px;background:#72558b;color:white;padding:9px 8px;font:12px monospace}.studio-menu{display:flex;justify-content:space-between;font:11px monospace;padding:10px 6px;color:#55495c}.collage-bed{position:relative;aspect-ratio: .84;overflow:hidden;border:1px solid #b695ae;border-radius:22px 22px 10px 10px;background:repeating-linear-gradient(90deg,#edafca 0px,#edafca 29px,#f9d9e6 30px,#f9d9e6 56px);isolation:isolate;box-shadow:inset 0 -12px 18px #87547535}.collage-bed.bed-1{background:repeating-linear-gradient(95deg,#c4aadf 0px,#dbc6ee 9px,#c4aadf 12px)}.collage-bed.bed-2{background:repeating-linear-gradient(90deg,#b3ded0 0px,#b3ded0 29px,#e4f3dc 30px,#e4f3dc 56px)}.bed-pillow{position:absolute;top:4%;left:13%;width:74%;height:22%;border-radius:16%;background:linear-gradient(170deg,#fff7ed,#edcdd3);box-shadow:3px 7px 9px #66476635;transform:rotate(-5deg);border:1px solid #fff9}.bed-note{position:absolute;top:10%;left:27%;font:italic 20px Georgia;color:#a97191;transform:rotate(-5deg)}.bed-label{position:absolute;bottom:12px;left:12px;font:9px monospace;background:#fff8;padding:5px 8px;pointer-events:none}.collage-piece{position:absolute;width:42%;height:29%;transform:translate(-50%,-50%);border:1px dashed transparent;background:none;padding:8px;touch-action:none;cursor:grab;z-index:2;border-radius:3px}.collage-piece[data-piece="1"]{height:34%;width:44%}.collage-piece[data-piece="2"]{width:37%;height:23%}.collage-piece[data-piece="3"]{width:33%;height:27%;z-index:1}.collage-piece[data-piece="4"]{width:25%;height:19%;z-index:3}.collage-piece .garment,.collage-piece .garment svg,.collage-piece .garment img{width:100%;height:100%;object-fit:contain;pointer-events:none;filter:drop-shadow(2px 4px 2px #55425b25)}.collage-piece.piece-selected{border-color:#46a6c0;background:#fff1;outline:2px solid #fff7;outline-offset:2px}.collage-piece:active,.collage-sticker:active{cursor:grabbing}.collage-sticker{position:absolute;transform:translate(-50%,-50%) rotate(-9deg);z-index:4;background:#fff7a8;border:1px solid #80667b;padding:7px 10px;color:#803d65;box-shadow:2px 3px 0 #8d5a8640;font:bold 12px monospace;touch-action:none;cursor:grab;max-width:65%}.studio-status{padding:9px 4px;font:10px monospace;color:#735776}.studio-controls{padding:6px 0}.studio-categories{display:flex;flex-wrap:wrap;gap:6px}.studio-categories button{border:1px solid #ca9fbc;background:#f8e8f3;border-radius:16px;padding:8px;font-size:10px;color:#754764;cursor:pointer}.studio-categories button.active{background:#765581;color:white;border-color:#765581}.studio-picker{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 0}.studio-picker span{font-size:12px;text-align:center}.studio-picker button{border:1px solid #ae88ad;background:#fff8ef;color:#67405e;width:38px;height:34px;border-radius:6px;cursor:pointer}.studio-backgrounds{display:flex;gap:10px;align-items:center;padding:8px 0 16px;font-size:11px}.swatch{width:28px;height:28px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #bca2b6;color:#57384e;cursor:pointer}.swatch-0{background:#edafca}.swatch-1{background:#c4aadf}.swatch-2{background:#b3ded0}.sticker-add{margin-left:auto;border:1px dashed #a97191;background:#fff3a9;color:#713d60;padding:8px;font-size:11px;cursor:pointer}.studio-shuffle{width:100%;border:1px solid #9772aa;border-radius:10px;padding:15px;background:#e3d3f3;color:#684676;font-size:12px;font-weight:700;cursor:pointer;box-shadow:0 3px 0 #b79fcb}.studio-reaction{font:italic 14px/1.5 Georgia;text-align:center;color:#87486a;min-height:42px;margin:18px 0 12px}.view-collage{background:#f6e2ed}.view-collage:before{background:linear-gradient(#fff8,#fff8),url('assets/brand/tiger-soft-pink.jpg') center/cover}.studio-dialog{max-width:min(360px,90vw);border:2px solid #78647e;padding:5px;background:#eee5e8;color:#67405e;box-shadow:6px 6px 0 #67405e55}.studio-dialog::backdrop{background:#3c274d77}.studio-dialog p{padding:10px;font-size:19px}.studio-dialog small{display:block;padding:0 10px 20px;line-height:1.5}.studio-dialog form>div:last-child{display:flex;gap:10px;padding:10px}.studio-dialog button{flex:1;padding:10px;border:1px solid #9e7e9e;background:#f9f1e9;color:#684676;cursor:pointer}.studio-dialog button[value="save"]{background:#765581;color:white}.studio-saved{width:100%;height:100%;aspect-ratio:auto;min-height:110px;pointer-events:none}.studio-saved .collage-piece{padding:2px}.studio-saved .collage-sticker{font-size:5px;padding:2px 3px}.studio-saved .bed-pillow{box-shadow:none}
+/* Las chicas MOODA: cabezas fotográficas recortadas sobre cuerpos de prendas. */
+.character-head,.character-portrait{background-image:url('assets/characters/mooda-faces.png');background-size:400% 100%;background-position:calc(var(--face) * 100% / 3) center;background-repeat:no-repeat;aspect-ratio:548 / 717;display:block}.character-head{position:absolute;width:34%;height:auto;transform:translate(-50%,-50%) rotate(-5deg);border:0;padding:0;background-color:transparent;z-index:5;touch-action:none;cursor:grab;filter:drop-shadow(2px 5px 2px #67405e25)}.character-head:active{cursor:grabbing}.character-head:focus-visible{outline:2px dashed #56b4cc;outline-offset:4px}.character-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:6px 0 12px}.character-heading>span:last-child{font:italic 11px Georgia;color:#90617f}.character-picker{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.character-option{min-width:0;padding:8px 3px;background:#fbecf5;border:1px solid #d8b6d0;border-radius:12px;cursor:pointer;color:#714563}.character-option:nth-child(2){background:#e8def3}.character-option:nth-child(3){background:#ffedd9}.character-option:nth-child(4){background:#d9eee3}.character-option.chosen{outline:2px solid #fa026d;outline-offset:2px}.character-option .character-portrait{width:100%;max-width:70px;margin:auto;transition:transform .2s}.character-option:hover .character-portrait{transform:rotate(7deg)}.character-option strong{display:block;font-size:9px;margin-top:7px;line-height:1.4}.character-quote{text-align:center;font:italic 14px Georgia;color:#995074;padding:4px 0 12px}.character-home{position:relative;z-index:1;margin:17px 0 0;padding:12px 10px 0;background:#fff0f5c9;border:1px solid #d7adc5;border-radius:18px;transform:rotate(-2deg)}.character-home>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:8px}.character-home p{margin:0;font:italic 15px Georgia;color:#8a4d72}.character-home-faces{display:flex;align-items:flex-end;justify-content:space-around;gap:8px}.character-home-faces button{border:0;background:none;width:23%;max-width:65px;padding:5px 0 0;cursor:pointer;transition:transform .2s}.character-home-faces button:nth-child(even){transform:rotate(7deg)}.character-home-faces button:hover{transform:translateY(-6px) rotate(-7deg)}.character-home-faces .character-portrait{width:100%}.studio-saved .character-head{filter:none;pointer-events:none}.collage-bed:has(.character-head) .bed-note{left:15%;top:5%;font-size:13px}.character-head~.bed-label{z-index:6}
+@media(prefers-reduced-motion:reduce){.character-option .character-portrait,.character-home-faces button{transition:none}}
+
+/* MOODA CLUB — amigas, recortes y drop Y2K. */
+.nav{grid-template-columns:repeat(5,minmax(0,1fr));padding-left:8px;padding-right:8px}.nav small{font-size:7px;letter-spacing:.2px}.nav button{min-width:0}.club-companion{display:flex;align-items:center;gap:8px;margin:24px 0 14px;position:relative;z-index:1;text-align:left;flex-shrink:0}.club-companion>.character-portrait{width:73px;flex:0 0 73px;transform:rotate(-7deg);filter:drop-shadow(2px 3px 0 #fff)}.club-bubble{position:relative;border:1px solid #d79abf;background:#fff8eeeF;padding:13px 12px 10px;border-radius:16px 16px 16px 0;box-shadow:3px 4px 0 #d89cc547;min-width:0;flex:1}.club-bubble:after{content:'✦';position:absolute;right:-5px;top:-11px;color:#fa026d;font-size:25px}.club-bubble .mini-label{font-size:8px;letter-spacing:1px}.club-bubble p{font-size:12px;line-height:1.5;color:#77435e;margin:8px 0}.club-bubble button{border:0;background:transparent;padding:5px 0;color:#b32872;font-size:10px;text-decoration:underline;text-underline-offset:3px}.home-shop-link{position:relative;z-index:1;width:100%;border:1px solid #d888ae;background:linear-gradient(110deg,#ffeff5ef,#f9c8e1d9),url('assets/brand/leopard-pink.jpg') center/cover;padding:17px;border-radius:9px;text-align:left;transform:rotate(1deg);color:#824362;margin:10px 0}.home-shop-link span{display:block;font-size:9px;letter-spacing:1px}.home-shop-link strong{display:block;font-size:18px;margin-top:7px}.screen-tienda{background:#d9eee5 url('assets/brand/animal-mint-pink.jpg') center/cover}.screen-tienda:before{background:#e6f7ebc7}.shop-topline{display:flex;justify-content:space-between;gap:10px;padding-bottom:13px;border-bottom:2px solid #f08abf;color:#87617b;font:8px monospace;letter-spacing:.6px}.shop-hero{position:relative;padding:40px 20px 25px;margin:23px 0 13px;background:#fff0f6;border:1px solid #e9bad1;box-shadow:5px 5px 0 #b7d5cb;transform:rotate(-1deg);text-align:left;isolation:isolate}.shop-hero:before{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(110deg,#fff0f7eb,#fce2f093),url('assets/brand/leopard-pink.jpg') center/cover;opacity:.7}.shop-hero>img{width:190px;max-width:85%;height:auto;mix-blend-mode:multiply}.shop-tape{position:absolute;left:16px;top:-10px;transform:rotate(-5deg);background:#fff1b4;padding:7px 13px;color:#a45781;font:9px monospace;letter-spacing:1px;box-shadow:1px 2px 1px #8b65852a}.shop-hero h1{font-size:32px;letter-spacing:-1.5px;line-height:1.05;color:#613650;margin:17px 0}.shop-hero h1 em{color:#fa026d}.shop-hero p{font-size:11px;max-width:210px;color:#895b75;line-height:1.5}.shop-cherries{position:absolute;right:5px;bottom:28px;font-size:59px;transform:rotate(13deg);filter:drop-shadow(3px 3px 0 white)}.shop-star{position:absolute;right:22px;top:24px;font-size:48px;color:#fa026d;text-shadow:2px 2px white}.shop-demo{font-size:9px;line-height:1.6;color:#765b6c;margin:12px 0}.shop-tabs{display:flex;gap:4px;padding:9px 0 14px;border-bottom:1px solid #a8cbbb}.shop-tabs button{flex:1;border:0;background:transparent;padding:9px 2px;color:#8b677e;font-size:10px;border-bottom:2px solid transparent}.shop-tabs .active{color:#fa026d;border-color:#fa026d;font-weight:700}.shop-filters{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.shop-filters button{border:1px solid #bad1c6;background:#fff9ed;color:#6f6767;border-radius:20px;font-size:10px;padding:8px 12px}.shop-filters .selected{background:#fa026d;border-color:#fa026d;color:white}.shop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.shop-card{min-width:0;position:relative;background:#fff8f2;padding:7px 7px 12px;border:1px solid #e3c6d5;box-shadow:3px 4px 0 #769b8a22;align-self:start}.shop-card:nth-child(3n+1){transform:rotate(-1.5deg)}.shop-card:nth-child(3n+2){transform:rotate(1.5deg)}.shop-product-open{display:block;width:100%;border:0;background:none;padding:0;text-align:left}.shop-art{width:100%;aspect-ratio:1;background-image:url('assets/shop/mooda-flower-drop-001.png');background-size:300% 200%;background-position:var(--sx) var(--sy);background-repeat:no-repeat;background-color:#f5dfe9}.shop-tag{display:block;font:7px monospace;letter-spacing:.5px;color:#b53377;padding-top:10px}.shop-card h3{font-size:12px;line-height:1.4;margin:6px 0;color:#63364e;padding-right:8px}.shop-price{font-size:11px;color:#8b6177}.shop-heart{position:absolute;right:12px;top:12px;width:29px;height:29px;background:#fff8f2eF;border:1px solid #f1a3c7;border-radius:50%;font-size:20px;color:#fa026d;display:grid;place-items:center;padding:0}.shop-heart[aria-pressed=true]{background:#f9c6dd}.shop-editorial{margin:30px 0 4px;padding:27px 20px;background:linear-gradient(#f7d8e9b5,#f7d8e9a5),url('assets/brand/leopard-pink.jpg') center/cover;border:1px solid #cd9db5;transform:rotate(-1deg);position:relative}.shop-editorial:after{content:'✦';position:absolute;right:12px;top:8px;font-size:52px;color:#fa026d;text-shadow:2px 2px white}.shop-editorial>span{font:9px monospace;color:#a63174}.shop-editorial h2{font-size:29px;line-height:1.05;letter-spacing:-1px;color:#743756}.shop-editorial p{font-size:11px;line-height:1.6;color:#86506e}.shop-editorial button{border:1px solid #bd6394;background:#ffefb5;color:#813b65;padding:10px;font-size:10px;transform:rotate(-2deg)}.shop-dialog{padding:5px;background:#fff2f5;color:#69334f;border:2px solid #896482;width:min(380px,92vw);max-height:90dvh;overflow:auto;box-shadow:5px 5px 0 #5d375855}.shop-dialog::backdrop{background:#45294288}.shop-dialog .retro-title{background:#a24380;font-size:10px;align-items:center}.shop-dialog .retro-title button{border:1px solid #fff;background:#f0dfe9;color:#63364e;font-size:17px;line-height:1;padding:2px 5px}.shop-detail-copy{padding:20px 15px 7px}.shop-detail-copy h2{font-size:24px;margin:10px 0}.shop-detail-copy p{font-size:12px;line-height:1.6}.shop-detail-copy small{display:block;font-size:10px;color:#9a6f86;line-height:1.5}.shop-detail-copy label{display:block;font-size:11px;margin:20px 0 7px}.shop-detail-copy select{width:100%;border:1px solid #dca3c0;background:#fffaf3;padding:12px;border-radius:5px;margin-bottom:15px;color:#69334f}.shop-detail-copy .primary{background:#fa026d}.shop-detail-copy .shop-demo{font-size:9px}.shop-empty{padding:34px 12px;text-align:center;color:#9a597f;font-size:12px;line-height:1.6}.shop-empty>span{font-size:40px}.shop-empty h2{font-size:23px;line-height:1.2}.shop-bag-row{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:10px;padding:18px 0;border-bottom:1px solid #abcabb;align-items:center}.shop-bag-row h3{font-size:12px;margin:0 0 7px;color:#70435a}.shop-bag-row small{font-size:9px;color:#90657d}.shop-bag-row>strong{font-size:11px;color:#b33376}.shop-quantity{display:flex;gap:12px;align-items:center;margin-top:10px;font-size:11px}.shop-quantity button{border:1px solid #d4adbf;background:#fff5ec;color:#8a5974;width:27px;height:25px;padding:0}.shop-total{display:flex;justify-content:space-between;padding:23px 0 8px;color:#9a3272;font-size:13px}.wire-home{height:auto;min-height:calc(100dvh - 150px)}.wire-home>.club-companion{width:100%}.wire-home>.character-home{width:100%}.home-bottom-note{margin-top:20px}@media(max-width:360px){.shop-topline{font-size:7px}.shop-hero h1{font-size:29px}.shop-grid{gap:15px 8px}.shop-card h3{font-size:11px}.shop-bag-row{grid-template-columns:60px minmax(0,1fr) auto}.club-companion>.character-portrait{width:60px;flex-basis:60px}}
+
+/* Merch usable in the wardrobe; retain the current screen format. */
+button.collection-cell{font:inherit;cursor:pointer;width:100%;color:inherit}button.collection-cell:hover{border-color:#fa026d;background:#fff2f8}.shop-try-on{width:100%;border:1px dashed #aa5283;background:#fff1b4;color:#813b65;padding:13px;margin-top:12px;border-radius:9px;font-size:12px;font-weight:700}
+
+
+/* Menú flotante centrado, con cinco accesos del mismo ancho. */
+.nav {
+  bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 28px), 402px);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+  gap: 3px;
+  padding: 7px;
+  border: 1px solid #edcddd;
+  border-radius: 25px;
+  background: #fffaf7f2;
+  box-shadow: 0 10px 32px #73345320, 0 2px 6px #7334530a;
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+.nav button {
+  min-width: 0;
+  min-height: 57px;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 2px;
+  border-radius: 18px;
+  color: #967c8b;
+}
+.nav svg { width: 21px; height: 21px; flex-shrink: 0; }
+.nav small { font-size: clamp(6px, 1.8vw, 7px); font-weight: 700; letter-spacing: .25px; line-height: 1.3; }
+.nav button:hover { color: #fa026d; background: #fbeef4; }
+.nav button.active { color: #fa026d; background: #f9dfec; box-shadow: inset 0 1px 0 #ffffffa6; }
+.nav .active::before { content: none; }
+.wire-screen { padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px)); }
+@media (prefers-reduced-motion: reduce) { .nav button { transition: none; } }
+
+
+/* iPhone de presentación: el contenido se desplaza dentro del dispositivo. */
+.phone-status, .phone-home { display: none; }
+@media (min-width: 520px) {
+  body {
+    min-height: 100dvh;
+    padding: 28px 24px;
+    display: grid;
+    place-items: center;
+    background-color: #eee5ec;
+    background-image: radial-gradient(ellipse at 25% 15%, #f9d5e5 0, transparent 55%), radial-gradient(ellipse at 80% 85%, #d6e9e1 0, transparent 55%);
+  }
+  .phone-mockup {
+    position: relative;
+    width: min(414px, calc((100dvh - 56px) * .49));
+    min-width: 280px;
+    aspect-ratio: 414 / 844;
+    padding: 10px;
+    border: 1px solid #85777f;
+    border-radius: 56px;
+    background: linear-gradient(135deg, #655a61, #191619 18%, #302a2f 80%, #73636d);
+    box-shadow: 0 30px 65px #38233130, 0 8px 20px #38233125, inset 0 0 0 3px #b5a1ae, inset 0 0 0 5px #272227;
+  }
+  .phone-mockup::before, .phone-mockup::after {
+    content: ''; position: absolute; width: 4px; border-radius: 3px; background: #72616c;
+  }
+  .phone-mockup::before { left: -4px; top: 145px; height: 47px; box-shadow: 0 60px 0 #72616c; }
+  .phone-mockup::after { right: -4px; top: 188px; height: 72px; }
+  .phone-viewport {
+    height: 100%; width: 100%; position: relative; overflow: hidden;
+    border-radius: 46px; background: #dbf3eb;
+    transform: translateZ(0);
+  }
+  .phone-status {
+    position: absolute; inset: 0 0 auto; height: 49px; z-index: 30;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; background: #dbf3eb; color: #30252d;
+    font-size: 12px; font-weight: 700; pointer-events: none;
+  }
+  .phone-island { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); width: 100px; height: 28px; border-radius: 22px; background: #151315; }
+  .phone-island::after { content: ''; position: absolute; right: 10px; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: #182132; box-shadow: inset 0 0 0 2px #222533; }
+  .phone-indicators { display: flex; align-items: center; gap: 5px; }
+  .phone-indicators svg { width: 29px; height: 13px; }
+  .phone-indicators i { width: 20px; height: 10px; border: 1px solid #30252d80; border-radius: 3px; position: relative; }
+  .phone-indicators i::before { content: ''; position: absolute; inset: 1px; background: #30252d; border-radius: 1px; }
+  .phone-indicators i::after { content: ''; position: absolute; right: -3px; top: 2px; height: 4px; width: 2px; background: #30252d80; border-radius: 1px; }
+  .phone-viewport .app {
+    --frame-height: 100%;
+    max-width: none; height: 100%; min-height: 0; margin: 0;
+    padding-top: 49px; overflow: auto; border-radius: 0; box-shadow: none;
+    scrollbar-width: none;
+  }
+  .phone-viewport .app::-webkit-scrollbar { display: none; }
+  .phone-viewport .wire-screen { min-height: calc(100% - 49px); padding-bottom: 118px; }
+  .phone-viewport .wire-home { min-height: 0; }
+  .phone-viewport .nav { bottom: 26px; width: calc(100% - 24px); }
+  .phone-home { display: block; position: absolute; bottom: 9px; left: 50%; transform: translateX(-50%); width: 105px; height: 4px; border-radius: 8px; background: #30252d; pointer-events: none; z-index: 30; }
+  .phone-viewport .toast { bottom: 108px; }
+}
+@media (max-width: 519px) {
+  body { padding-top: 0; }
+  .app { --frame-height: 100dvh; border-radius: 0; }
+}
+
+
+/* Mantener el teléfono y sus controles quietos; desplazar solo el contenido. */
+html, body { overflow-x: hidden; overscroll-behavior-x: none; }
+.phone-viewport .app { overflow-x: hidden; overflow-y: auto; overscroll-behavior: none; touch-action: pan-y; }
+.phone-viewport img { -webkit-user-drag: none; }
+@media (min-width: 520px) {
+  body { height: 100dvh; overflow: hidden; }
+  .phone-mockup {
+    height: min(844px, calc(100dvh - 56px));
+    width: auto;
+    min-width: 0;
+    flex-shrink: 0;
+  }
+  .phone-viewport .app { height: 100%; width: 100%; }
+}
+
+
+/* Inspiración: mantener las tarjetas y la compañera en el flujo de la página. */
+.screen-inspiracion .wire-inspiration-menu {
+  position: static;
+  width: 100%;
+  display: grid;
+  gap: 16px;
+  margin: 20px 0 28px;
+  flex-shrink: 0;
+}
+.screen-inspiracion .wire-inspiration-menu .wire-bottom {
+  margin-top: 0;
+  min-height: 78px;
+  transform: none;
+  text-align: left;
+  gap: 12px;
+}
+.screen-inspiracion > .wire-title { flex-shrink: 0; }
+.screen-inspiracion > .club-companion { flex-shrink: 0; margin-top: 12px; }
+.screen-inspiracion .artist-row,
+.screen-inspiracion .genre-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.screen-inspiracion .artist,
+.screen-inspiracion .genre { min-width: 0; }
+.screen-inspiracion .filter-row { flex-wrap: wrap; }
+
+
+/* Detalle de compra contenido en la pantalla del mockup. */
+.shop-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: #45294288;
+  overflow: hidden;
+}
+.shop-overlay .shop-dialog[open] {
+  position: relative;
+  inset: auto;
+  margin: 0;
+  width: 100%;
+  max-width: 380px;
+  max-height: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-radius: 16px;
+}
+@media (min-width: 520px) {
+  .phone-viewport .shop-overlay { top: 49px; bottom: 20px; padding: 12px; }
+}
+
+
+/* Arrastre estable: los botones del collage conservan su punto de anclaje. */
+.collage-bed button { user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; transition: none; }
+.collage-bed .collage-piece:active { transform: translate(-50%, -50%); }
+.collage-bed .character-head:active { transform: translate(-50%, -50%) rotate(-5deg); }
+.collage-bed .collage-sticker:active { transform: translate(-50%, -50%) rotate(-9deg); }
+.collage-bed .is-dragging { z-index: 15; cursor: grabbing; }
+.collage-bed .character-head.piece-selected { outline: 2px dashed #46a6c0; outline-offset: 3px; border-radius: 14px; }
+.collage-bed .collage-piece::after, .collage-bed .character-head[data-head]::after { content: ''; position: absolute; inset: -7px; }
+.collage-bed .bed-note, .collage-bed .bed-label, .collage-bed .bed-pillow { pointer-events: none; }
+.studio-move-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 4px 10px; }
+.studio-move-controls button { min-width: 44px; min-height: 44px; border: 1px solid #ca9fbc; border-radius: 12px; background: #fff6fb; color: #754764; font-size: 12px; font-weight: 700; }
+.studio-move-controls > button { padding: 8px 10px; }
+.studio-move-arrows { display: flex; gap: 5px; }
+.studio-move-arrows button { font-size: 20px; }
+
+
+/* Identidad MOODA: flor original y fucsia del nuevo logo. */
+:root { --pink: #fa026d; }
+.home-brand { max-width: 245px; margin: -18px auto -8px; }
+.home-brand .mooda-logo { mix-blend-mode: normal; }
+.home-tagline { margin-top: 8px; }
+.nav button.active { color: var(--pink); background: #ffe0ee; }
+.nav button:hover { color: var(--pink); }
+.home-start, .shop-detail-copy .primary { background: var(--pink); }
+
+.shop-hero img { mix-blend-mode: normal; width: min(70%, 220px); height: auto; object-fit: contain; }
+
+.shop-overlay .studio-dialog[open] { position: relative; inset: auto; margin: 0; width: 100%; max-width: 360px; max-height: 100%; overflow-y: auto; border-radius: 16px; overscroll-behavior: contain; }
+
+.cell-delete { position: absolute; left: 5px; top: 5px; width: 28px; height: 28px; border-radius: 50%; border: 1px solid #ead3de; background: #fff9f4ed; color: #8b6177; font-size: 20px; line-height: 1; display: grid; place-items: center; padding: 0; z-index: 2; }
+.cell-delete:hover { background: #ffe0ee; color: var(--pink); }
+
+@media (min-width: 520px) { body { background-size: 100% 100%; background-repeat: no-repeat; } }
+
+/* Mantener la acción principal de inicio visible en el mockup. */
+.phone-viewport .screen-inicio { padding-top: 28px; }
+.phone-viewport .home-topline { margin-bottom: 18px; }
+.phone-viewport .home-brand { max-width: 210px; }
+.phone-viewport .home-tagline { margin: 12px 0 22px; }
+.phone-viewport .home-copy { padding-top: 0; }
+.phone-viewport .home-copy h1 { font-size: 34px; margin: 12px 0; }
+.phone-viewport .home-copy p { margin-bottom: 20px; }
+
+@media (min-width: 520px) and (max-height: 800px) {
+  .phone-viewport .screen-inicio { padding-top: 20px; }
+  .phone-viewport .home-brand { max-width: 170px; }
+  .phone-viewport .home-tagline { margin-bottom: 14px; }
+  .phone-viewport .home-copy h1 { font-size: 30px; }
+}
+
+.home-brand .mooda-logo { aspect-ratio: 1; }
+@media (min-width: 520px) and (max-height: 700px) {
+  .phone-viewport .screen-inicio { padding-top: 16px; }
+  .phone-viewport .home-topline { margin-bottom: 8px; }
+  .phone-viewport .home-brand { max-width: 110px; }
+  .phone-viewport .home-tagline { margin: 6px 0 12px; }
+  .phone-viewport .home-copy h1 { font-size: 28px; }
+}
